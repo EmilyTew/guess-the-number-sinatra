@@ -7,16 +7,17 @@
   </head>
 
   <body>
-      <h1>I'm thinking of a number between 1 and 100.</h1>
+      <h1 class="abc"><link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+I'm thinking of a number between 1 and 100.</h1>
 
-      <h2><%= guess_prompt %></h2>
+      <h2 class="abc"><%= guess_prompt %></h2>
 
       <p><%= guess_description %></p>
 
       <form action="/play" method="post">
         <label>
-          <input type="number" name="guessed_number" placeholder="Enter guess" autofocus />
-          <input type="submit" value="Guess" />
+          <input class="number" type="number" name="guessed_number" placeholder="Enter guess" autofocus />
+          <input class="start" type="submit" value="Guess" />
         </label>
       </form>
   </body>
